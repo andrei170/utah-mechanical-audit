@@ -88,7 +88,16 @@ footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;l
 .gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
 .gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
 @media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
-</style></head><body>
+
+.agnav{position:sticky;top:0;z-index:60;background:rgba(13,17,23,.93);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.agnav .inner::-webkit-scrollbar{display:none}
+.agnav a{flex:0 0 auto;padding:13px 12px;font-size:13.5px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.agnav a:hover{color:var(--ink)}
+.agnav a.on{color:var(--accent);border-bottom-color:var(--accent)}
+.agnav a.ext{opacity:.8}
+@media(max-width:640px){.agnav .inner{padding:0 14px}.agnav a{padding:12px 10px;font-size:13px}}
+</style></head><body><nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Audit</a><a href="competitors.html">Competitors</a><a href="https://andrei170.github.io/utah-mechanical-demo/" class="ext" target="_blank" rel="noopener">Concept Site &#8599;</a></div></nav>
 <header>
   <div class="wrap">
     <div class="eyebrow">Lead &amp; Website Audit &middot; Utah Mechanical and Services LLC &middot; Saratoga Springs, Utah</div>
